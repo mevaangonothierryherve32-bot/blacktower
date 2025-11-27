@@ -1,119 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Track Record - Portefeuille</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: #1a1a1a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      margin-top: 0;
-    }
-    canvas {
-      max-width: 100%;
-      margin-bottom: 30px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background: #f0f0f0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport Journal – Semaine 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+        }
+        h1 { font-size: 1.8em; margin-bottom: 10px; }
+        h2 { font-size: 1.5em; margin-top: 30px; margin-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 20px; margin-bottom: 8px; }
+        p { margin-bottom: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #e6f2ff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .emoji { margin-right: 5px; }
+        .highlight { font-weight: bold; color: #007bff; }
+    </style>
 </head>
 <body>
 
-<header>
-  <h1>Évolution Mensuelle du Portefeuille</h1>
-</header>
+    <h1>📘 Rapport Journal – Semaine 7 (Optimisé & Comportemental Avancé)</h1>
+    <p><span class="highlight">Période :</span> 03 → 09 octobre 2025</p>
+    <p><span class="highlight">Base capital :</span> $200,000</p>
 
-<div class="container">
-  <h2>Courbe de Performance</h2>
-  <canvas id="performanceChart"></canvas>
+    <div class="section">
+        <h2>1️⃣ Résumé rapide</h2>
+        <p>P&L net (semaine) : $6,402.16</p>
+        <p>ROI : +3.20%</p>
+        <p>Nombre de trades : 10 (7 gagnants / 3 perdants) → Win rate : 70%</p>
+        <p>Gain moyen / trade : $640.22</p>
+        <p>Risque par trade : 0.25% du capital ($500)</p>
+        <p>Concentration des performances : 81.3% du P&L total vient des 3 meilleures opérations</p>
+        <p><span class="highlight">Observation clé :</span><br>
+        Excellente gestion émotionnelle : le trader respecte strictement ses stops, laisse courir les gains, ne surtrade pas, et démontre une stabilité mentale remarquable.<br>
+        Les décisions ont été cohérentes avec la politique de risque, sans dérive impulsive.</p>
+    </div>
 
-  <h2>Tableau des Performances</h2>
-  <table>
-    <tr>
-      <th>Mois</th>
-      <th>Performance (%)</th>
-      <th>Capital</th>
-    </tr>
-    <tr>
-      <td>Janvier 2025</td>
-      <td>+4.2%</td>
-      <td>105,000€</td>
-    </tr>
-    <tr>
-      <td>Février 2025</td>
-      <td>+3.1%</td>
-      <td>108,255€</td>
-    </tr>
-    <tr>
-      <td>Mars 2025</td>
-      <td>-1.8%</td>
-      <td>106,310€</td>
-    </tr>
-  </table>
-</div>
+    <div class="section">
+        <h2>2️⃣ Statistiques clés</h2>
+        <table>
+            <tr><th>Mesure</th><th>Valeur</th></tr>
+            <tr><td>Total P&L</td><td>$6,402.16</td></tr>
+            <tr><td>ROI (vs $200k)</td><td>3.20%</td></tr>
+            <tr><td>Win rate</td><td>70%</td></tr>
+            <tr><td>Gain moyen / trade</td><td>$640.22</td></tr>
+            <tr><td>Gain moyen (winners)</td><td>$1,013.76</td></tr>
+            <tr><td>Perte moyenne (losers)</td><td>–$231.40</td></tr>
+            <tr><td>Profit Factor</td><td>10.22</td></tr>
+            <tr><td>Expectancy</td><td>$640.22 / trade</td></tr>
+            <tr><td>Sharpe Ratio</td><td>0.64</td></tr>
+            <tr><td>Sortino Ratio</td><td>2.77</td></tr>
+            <tr><td>Calmar Ratio</td><td>16.0</td></tr>
+            <tr><td>Max Drawdown</td><td>–$399.84 (0.20%)</td></tr>
+            <tr><td>Kelly Criterion (théorique)</td><td>63.2% du capital</td></tr>
+            <tr><td>Fraction utilisée</td><td>0.25% (~1/250 Kelly)</td></tr>
+        </table>
+    </div>
 
-<script>
-const ctx = document.getElementById('performanceChart').getContext('2d');
-const performanceChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Janvier 2025', 'Février 2025', 'Mars 2025'],
-        datasets: [{
-            label: 'Performance (%)',
-            data: [4.2, 3.1, -1.8],
-            borderColor: 'rgba(75, 192, 192, 1)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            fill: true,
-            tension: 0.3
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'top',
-            },
-        },
-        scales: {
-            y: {
-                beginAtZero: false
-            }
-        }
-    }
-});
-</script>
+    <div class="section">
+        <h2>3️⃣ Répartition par instrument</h2>
+        <table>
+            <tr><th>Instrument</th><th>P&L ($)</th><th>% du total</th></tr>
+            <tr><td>JAP225.cash</td><td>3,071.03</td><td>47.97%</td></tr>
+            <tr><td>GER30.cash</td><td>2,640.24</td><td>41.24%</td></tr>
+            <tr><td>US30.cash</td><td>607.73</td><td>9.49%</td></tr>
+            <tr><td>XAU/USD</td><td>483.00</td><td>7.54%</td></tr>
+            <tr><td>FRA40.cash</td><td>–251.65</td><td>–3.93%</td></tr>
+            <tr><td>EU50.cash</td><td>–148.19</td><td>–2.31%</td></tr>
+        </table>
+        <p>→ Bonne maîtrise du single-instrument risk. Aucun excès de levier ou biais géographique.</p>
+    </div>
 
-</body>
-</html>
+    <div class="section">
+        <h2>4️⃣ Analyse temporelle et séquentielle</h2>
+        <p>Durée moyenne des trades : 31h21m</p>
+        <p>Gagnants : 44h07m → patience et détachement émotionnel.</p>
+        <p>Perdants : 1h32m → exécution rapide, sans attachement.</p>
+        <p>Profit / heure : $20.43</p>
+        <p>Autocorrélation P&L : 0.12 → pas d’effet d’euphorie ou de revanche.</p>
+        <p>Max séquence de pertes : 2 → excellente résilience émotionnelle.</p>
+    </div>
+
+    <div class="section">
+        <h2>5️⃣ Analyse avancée de risque</h2>
+        <table>
+            <tr><th>Variable</th><th>Valeur / Interprétation</th></tr>
+            <tr><td>Max Drawdown</td><td>–$399.84 (0.20%)</td></tr>
+            <tr><td>VaR 95%</td><td>$1,200</td></tr>
+            <tr><td>CVaR</td><td>$1,450</td></tr>
+            <tr><td>Tail Ratio</td><td>2.15 → gains extrêmes &gt; pertes extrêmes</td></tr>
+            <tr><td>Risk/Reward moyen</td><td>4.38</td></tr>
+            <tr><td>Equity at Risk (EaR)</td><td>$5,000 (10 trades consécutifs perdants)</td></tr>
+            <tr><td>Rolling Sharpe/Sortino</td><td>stable → aucune dérive comportementale</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>6️⃣ Analyse comportementale rigoureuse complète</h2>
+        <p><span class="highlight">Profil psychologique :</span> Trader rationnel, conservateur, à contrôle émotionnel élevé.</p>
+        <table>
+            <tr><th>Compétence</th><th>Score /10</th><th>Commentaire</th></tr>
+            <tr><td>Discipline</td><td>9</td><td>Respect total du plan de trade et des stops</td></tr>
+            <tr><td>Gestion des pertes</td><td>10</td><td>Pertes coupées immédiatement, aucun attachement</td></tr>
+            <tr><td>Patience</td><td>9</td><td>Laisse courir les gains (44h en moyenne)</td></tr>
+            <tr><td>Contrôle émotionnel</td><td>9</td><td>Aucune panique ni euphorie</td></tr>
+            <tr><td>Tolérance à la frustration</td><td>8</td><td>Accepte pertes et trades ratés sans stress</td></tr>
+            <tr><td>Confiance</td><td>8</td><td>Confiance équilibrée dans ses analyses</td></tr>
+            <tr><td>Concentration</td><td>9</td><td>Focus constant, aucune distraction</td></tr>
+            <tr><td>Adaptabilité</td><td>7</td><td>Ajustements réfléchis aux changements de marché</td></tr>
+            <tr><td>Résilience</td><td>9</td><td>Récupération rapide après pertes</td></tr>
+            <tr><td>Équilibre mental</td><td>9</td><td>Maintien d’un état stable toute la semain
